@@ -1,0 +1,260 @@
+/* Base Colors */
+:root {
+  --primary-color: #e63946;   /* Red for buttons and accents */
+  --secondary-color: #222;    /* Dark background color */
+  --text-light: #fff;         /* Light text */
+  --text-dark: #333;          /* Dark text */
+  --card-bg: #333;            /* Background color for cards */
+  --card-hover-bg: #444;      /* Hover background for cards */
+  --section-bg: #111;         /* Dark background for sections */
+  --shadow-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Universal Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: var(--secondary-color);
+  color: var(--text-light);
+  line-height: 1.6;
+}
+
+/* Navbar Styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--secondary-color);
+  padding: 1.5rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo h1 {
+  color: var(--primary-color);
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--text-light);
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: var(--primary-color);
+  transition: color 0.3s ease;
+}
+
+/* Hero Section Styling */
+.hero-section {
+  height: 100vh;
+  background-image: url('/images/hero-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  text-align: center;
+}
+
+.hero-content {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 3rem;
+  border-radius: 15px;
+}
+
+.hero-content h1 {
+  font-size: 4.5rem;
+  color: var(--primary-color);
+  text-shadow: 2px 2px var(--shadow-color);
+}
+
+.hero-content p {
+  margin: 1rem 0;
+  font-size: 1.5rem;
+  color: var(--text-light);
+}
+
+.cta-button {
+  padding: 1rem 2rem;
+  background-color: var(--primary-color);
+  color: var(--text-light);
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cta-button:hover {
+  background-color: #ff5252;
+  transition: background-color 0.3s ease;
+}
+
+/* Program Cards Section */
+.program-cards-section {
+  padding: 4rem 2rem;
+  background-color: var(--section-bg);
+  text-align: center;
+}
+
+.program-cards-section h2 {
+  font-size: 3rem;
+  color: var(--primary-color);
+  margin-bottom: 2rem;
+}
+
+.program-cards {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.program-card {
+  background-color: var(--card-bg);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px var(--shadow-color);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.program-card:hover {
+  transform: translateY(-10px);
+  background-color: var(--card-hover-bg);
+}
+
+.program-card h3 {
+  font-size: 1.8rem;
+  color: var(--primary-color);
+}
+
+.program-card p {
+  font-size: 1rem;
+  color: var(--text-light);
+}
+
+.price {
+  font-size: 2rem;
+  color: var(--primary-color);
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+.plan-button {
+  padding: 0.7rem 1.5rem;
+  background-color: var(--primary-color);
+  color: var(--text-light);
+  border: none;
+  border-radius: 5px;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+.plan-button:hover {
+  background-color: #ff5252;
+}
+
+/* Trainers Section */
+.trainers-section {
+  padding: 4rem 2rem;
+  background-color: var(--section-bg);
+  text-align: center;
+}
+
+.trainers-section h2 {
+  font-size: 3rem;
+  color: var(--primary-color);
+  margin-bottom: 2rem;
+}
+
+.trainers {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.trainer-card {
+  background-color: var(--card-bg);
+  padding: 2rem;
+  border-radius: 10px;
+  width: 250px;
+  text-align: center;
+  box-shadow: 0 4px 15px var(--shadow-color);
+}
+
+.trainer-card h3 {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+}
+
+.trainer-card p {
+  font-size: 1rem;
+  color: var(--text-light);
+}
+
+/* Testimonials Section */
+.testimonials-section {
+  padding: 4rem 2rem;
+  background-color: var(--secondary-color);
+  text-align: center;
+}
+
+.testimonials-section h2 {
+  font-size: 3rem;
+  color: var(--primary-color);
+  margin-bottom: 2rem;
+}
+
+.testimonials {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.testimonial {
+  background-color: var(--card-bg);
+  padding: 2rem;
+  border-radius: 10px;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 4px 15px var(--shadow-color);
+}
+
+.testimonial p {
+  font-size: 1.1rem;
+  color: var(--text-light);
+  margin-bottom: 1rem;
+}
+
+.testimonial h4 {
+  font-size: 1.2rem;
+  color: var(--primary-color);
+}
+
+/* Footer */
+footer {
+  background-color: var(--secondary-color);
+  padding: 2rem;
+  text-align: center;
+  color: var(--text-light);
+}
+
+footer p {
+  font-size: 1rem;
+}

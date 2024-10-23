@@ -1,0 +1,21 @@
+.metrics {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem 5rem;
+    background-color: #222;
+    color: white;
+  }
+  
+  .metric {
+    text-align: center;
+  }
+  
+  .metric h3 {
+    font-size: 2rem;
+    color: red;
+  }
+  
+  .metric p {
+    font-size: 1rem;
+  }
+  

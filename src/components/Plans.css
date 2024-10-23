@@ -1,0 +1,90 @@
+.plans-section {
+    padding: 3rem 5rem;
+    background-color: #222;
+    color: white;
+    text-align: center;
+  }
+  
+  .plans-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .plans-section p {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .billing-toggle {
+    margin-bottom: 2rem;
+  }
+  
+  .toggle-btn {
+    padding: 0.5rem 1rem;
+    background-color: #333;
+    color: white;
+    border: none;
+    margin: 0 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .toggle-btn.active {
+    background-color: red;
+    color: white;
+  }
+  
+  .plans-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+  
+  .plan-card {
+    background-color: #333;
+    padding: 2rem;
+    border-radius: 10px;
+    width: 30%;
+    text-align: left;
+  }
+  
+  .plan-title {
+    font-size: 1.5rem;
+    color: orange;
+    margin-bottom: 1rem;
+  }
+  
+  .plan-description {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+  }
+  
+  .plan-features {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 1.5rem;
+  }
+  
+  .plan-features li {
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+  }
+  
+  .plan-price {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: red;
+    text-align: center;
+  }
+  
+  .choose-plan {
+    padding: 0.5rem 1rem;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+  }
+  
