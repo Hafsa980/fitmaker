@@ -1,54 +1,112 @@
+/* Services Section */
 .services-section {
-    padding: 3rem 5rem;
-    background-color: #222;
-    color: white;
-    text-align: center;
+  padding: 3rem 5rem;
+  background-color: #222;
+  color: white;
+  text-align: center;
+}
+
+.services-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.services-section p {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+.services-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.service-card {
+  background-color: #333;
+  padding: 1rem;
+  border-radius: 10px;
+  width: 23%;
+}
+
+.service-card img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.service-card h3 {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+
+.service-card p {
+  margin: 1rem 0;
+  font-size: 1rem;
+}
+
+.learn-more {
+  padding: 0.5rem 1rem;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Medium Screen (Tablets) */
+@media (max-width: 1024px) {
+  .services-section {
+      padding: 2rem 3rem;
   }
-  
-  .services-section h2 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-  }
-  
-  .services-section p {
-    font-size: 1rem;
-    margin-bottom: 2rem;
-  }
-  
+
   .services-container {
-    display: flex;
-    justify-content: space-between;
-    gap: 2rem;
+      flex-wrap: wrap;
   }
-  
+
   .service-card {
-    background-color: #333;
-    padding: 1rem;
-    border-radius: 10px;
-    width: 23%;
+      width: 45%;
+      margin-bottom: 2rem;
   }
-  
-  .service-card img {
-    max-width: 100%;
-    border-radius: 10px;
+
+  .services-section h2 {
+      font-size: 2rem;
   }
-  
+
+  .services-section p, .service-card p {
+      font-size: 0.95rem;
+  }
+
   .service-card h3 {
-    font-size: 1.5rem;
-    margin-top: 1rem;
+      font-size: 1.4rem;
   }
-  
-  .service-card p {
-    margin: 1rem 0;
-    font-size: 1rem;
+}
+
+/* Small Screen (Mobile) */
+@media (max-width: 768px) {
+  .services-section {
+      padding: 2rem 1.5rem;
   }
-  
-  .learn-more {
-    padding: 0.5rem 1rem;
-    background-color: red;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+
+  .services-container {
+      flex-direction: column;
+      gap: 1.5rem;
   }
-  
+
+  .service-card {
+      width: 100%;
+  }
+
+  .services-section h2 {
+      font-size: 1.8rem;
+  }
+
+  .services-section p, .service-card p {
+      font-size: 0.9rem;
+  }
+
+  .service-card h3 {
+      font-size: 1.3rem;
+  }
+}

@@ -1,0 +1,99 @@
+.community-faq-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem 5rem;
+    background-color: #222;
+    color: white;
+  }
+  
+  .join-community {
+    width: 45%;
+    text-align: left;
+  }
+  
+  .join-community h2 {
+    font-size: 2rem;
+  }
+  
+  .join-community p {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .sign-up-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .sign-up-form input {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    border: 1px solid #444;
+  }
+  
+  .sign-up-form button {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .google-signup {
+    background-color: #333;
+    color: white;
+    border: 1px solid #444;
+  }
+  
+  .faq-section {
+    width: 45%;
+  }
+  
+  .faq-section h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .faq-item {
+    margin-bottom: 1.5rem;
+  }
+  
+  .faq-item h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+  }
+  
+  .faq-item p {
+    font-size: 1rem;
+    display: none;
+  }
+  
+  .faq-item h3:hover {
+    color: red;
+    transition: color 0.3s;
+  }
+  
+  .faq-item h3:focus + p, .faq-item h3:active + p {
+    display: block;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .community-faq-section {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .join-community, .faq-section {
+      width: 100%;
+      text-align: center;
+    }
+  
+    .sign-up-form {
+      align-items: center;
+    }
+  }
+  

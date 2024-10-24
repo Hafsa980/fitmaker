@@ -1,21 +1,66 @@
-.metrics {
-    display: flex;
-    justify-content: space-around;
-    padding: 2rem 5rem;
-    background-color: #222;
-    color: white;
+/* Metrics Section */
+.metrics { 
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem 5rem;
+  background-color: #222;
+  color: white;
+}
+
+.metric {
+  text-align: center;
+}
+
+.metric h3 {
+  font-size: 2rem;
+  color: red;
+}
+
+.metric p {
+  font-size: 1rem;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Medium Screen (Tablets) */
+@media (max-width: 1024px) {
+  .metrics {
+      padding: 2rem 3rem;
+      flex-wrap: wrap;
   }
-  
+
   .metric {
-    text-align: center;
+      flex: 1 1 45%;
+      margin-bottom: 2rem;
   }
-  
+
   .metric h3 {
-    font-size: 2rem;
-    color: red;
+      font-size: 1.8rem;
   }
-  
+
   .metric p {
-    font-size: 1rem;
+      font-size: 0.95rem;
   }
-  
+}
+
+/* Small Screen (Mobile) */
+@media (max-width: 768px) {
+  .metrics {
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem;
+  }
+
+  .metric {
+      margin-bottom: 1.5rem;
+      width: 100%;
+  }
+
+  .metric h3 {
+      font-size: 1.5rem;
+  }
+
+  .metric p {
+      font-size: 0.9rem;
+  }
+}

@@ -9,7 +9,6 @@ function Navbar() {
     <nav className="navbar">
       <div className="navbar-logo">
         <img src={Logo} alt="FitMaker Logo" />
-        <span>FitMaker</span>
       </div>
       <ul className="navbar-links">
         <li><a href="./HeroSection.js">Home</a></li>
