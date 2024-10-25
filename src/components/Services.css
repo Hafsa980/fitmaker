@@ -91,11 +91,11 @@
 
   .services-container {
       flex-direction: column;
-      gap: 1.5rem;
+      gap: 1rem;
   }
 
   .service-card {
-      width: 100%;
+      width: 93%;
   }
 
   .services-section h2 {

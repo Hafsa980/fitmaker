@@ -7,7 +7,7 @@ import './FitnessTools.css';
 function FitnessTools() {
   return (
     <section className="tools-section">
-      <h2>Our <span className="highlight">Fitness Tools</span></h2>
+      <h2><span className="highlight">Our Fitness Tools</span></h2>
       <p>Access A Variety Of Tools To Help You Reach Your Fitness Goals More Effectively.</p>
       <div className="tools-container">
         <div className="tool-card">
